@@ -428,7 +428,7 @@ void FurnaceGUI::drawPiano() {
                     alterSampleMap(1,note);
                   } else {
                     e->synchronized([this,note]() {
-                      if (!e->autoNoteOn(-1,curIns,note)) failedNoteOn=true;
+                      if (!e->autoNoteOn(-1,curIns,note, floor(FurnaceGUI::volctrl * 127.0f))) failedNoteOn=true;
                     });
                     if (edit && curWindow!=GUI_WINDOW_INS_LIST && curWindow!=GUI_WINDOW_INS_EDIT) noteInput(note,0);
                   }

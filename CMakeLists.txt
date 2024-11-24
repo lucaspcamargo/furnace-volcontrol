@@ -938,6 +938,7 @@ src/gui/userPresets.cpp
 src/gui/util.cpp
 src/gui/waveEdit.cpp
 src/gui/volMeter.cpp
+src/gui/volControl.cpp
 src/gui/xyOsc.cpp
 src/gui/gui.cpp
 )

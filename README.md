@@ -4,6 +4,8 @@
 
 the biggest multi-system chiptune tracker ever made!
 
+This fork adds volume control for performance and recording
+
 [downloads](#downloads) | [discussion/help](#quick-references) | [developer info](#developer-info) | [Unix/Linux packages](#packages)
 
 ---

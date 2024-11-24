@@ -1645,6 +1645,7 @@ class FurnaceGUI {
   bool portrait, injectBackUp, mobileMenuOpen, warnColorPushed;
   bool wantCaptureKeyboard, oldWantCaptureKeyboard, displayMacroMenu;
   bool displayNew, displayExport, displayPalette, fullScreen, preserveChanPos, sysDupCloneChannels, sysDupEnd, noteInputPoly, notifyWaveChange;
+  float volctrl;
   bool wantScrollListIns, wantScrollListWave, wantScrollListSample;
   bool displayPendingIns, pendingInsSingle, displayPendingRawSample, snesFilterHex, modTableHex, displayEditString;
   bool displayPendingSamples, replacePendingSample;
@@ -2875,6 +2876,7 @@ class FurnaceGUI {
   void drawOsc();
   void drawChanOsc();
   void drawVolMeter();
+  void drawVolControl();
   void drawStats();
   void drawMemory();
   void drawCompatFlags();

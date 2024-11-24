@@ -1271,7 +1271,7 @@ void FurnaceGUI::stop() {
 void FurnaceGUI::previewNote(int refChan, int note, bool autoNote) {
   e->setMidiBaseChan(refChan);
   e->synchronized([this,note]() {
-    if (!e->autoNoteOn(-1,curIns,note)) failedNoteOn=true;
+    if (!e->autoNoteOn(-1,curIns,note, floor(FurnaceGUI::volctrl * 127.0f))) failedNoteOn=true;
   });
 }
 
