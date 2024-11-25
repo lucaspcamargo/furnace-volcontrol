@@ -8037,6 +8037,7 @@ void FurnaceGUI::syncState() {
   followOrders=e->getConfBool("followOrders",true);
   followPattern=e->getConfBool("followPattern",true);
   noteInputPoly=e->getConfBool("noteInputPoly",true);
+  volctrl=e->getConfFloat("volctrl",0.6f);
   audioExportOptions.loops=e->getConfInt("exportLoops",0);
   if (audioExportOptions.loops<0) audioExportOptions.loops=0;
   audioExportOptions.fadeOut=e->getConfDouble("exportFadeOut",0.0);
@@ -8188,6 +8189,7 @@ void FurnaceGUI::commitState(DivConfig& conf) {
   conf.set("followPattern",followPattern);
   conf.set("orderEditMode",orderEditMode);
   conf.set("noteInputPoly",noteInputPoly);
+  conf.set("volctrl", volctrl);
   if (settings.persistFadeOut) {
     conf.set("exportLoops",audioExportOptions.loops);
     conf.set("exportFadeOut",audioExportOptions.fadeOut);
